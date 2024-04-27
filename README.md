@@ -51,8 +51,8 @@ Begin<br>
             break<br>
       done<br>
 
-      val2 := val2 + (m * nodeList[j].value)
-      m := m * 10
+      val2 := val2 + (m * nodeList[j].value)<br>
+      m := m * 10<br>
    done<br>
 
    m := 1<br>
@@ -63,8 +63,8 @@ Begin<br>
             break<br>
       done<br>
 
-      val3 := val3 + (m * nodeList[j].value)
-      m := m * 10
+      val3 := val3 + (m * nodeList[j].value)<br>
+      m := m * 10<br>
    done<br>
 
    if val3 = (val1 + val2), then<br>
@@ -72,37 +72,37 @@ Begin<br>
    return false<br>
 End<br>
 <hr>
-## PROGRAM:
-```
-from itertools import permutations
-def solve_cryptarithmetic():
-    for perm in permutations(range(10), 8):
-        S, E, N, D, M, O, R, Y = perm
+## PROGRAM:<br>
 
-        # Check for leading zeros
-        if S == 0 or M == 0:
-            continue
+from itertools import permutations<br>
+def solve_cryptarithmetic():<br>
+    for perm in permutations(range(10), 8):<br>
+        S, E, N, D, M, O, R, Y = perm<br>
 
-        # Check the equation constraints
-        SEND = 1000 * S + 100 * E + 10 * N + D
-        MORE = 1000 * M + 100 * O + 10 * R + E
-        MONEY = 10000 * M + 1000 * O + 100 * N + 10 * E + Y
+        # Check for leading zeros<br>
+        if S == 0 or M == 0:<br>
+            continue<br>
 
-        if SEND + MORE == MONEY:
-            return SEND, MORE, MONEY
-    return None
+        # Check the equation constraints<br>
+        SEND = 1000 * S + 100 * E + 10 * N + D<br>
+        MORE = 1000 * M + 100 * O + 10 * R + E<br>
+        MONEY = 10000 * M + 1000 * O + 100 * N + 10 * E + Y<br>
 
-solution = solve_cryptarithmetic()
+        if SEND + MORE == MONEY:<br>
+            return SEND, MORE, MONEY<br>
+    return None<br>
 
-if solution:
-    SEND, MORE, MONEY = solution
-    print(f'SEND = {SEND}')
-    print(f'MORE = {MORE}')
-    print(f'MONEY = {MONEY}')
-else:
-    print("No solution found.")
-```
-<br>
+solution = solve_cryptarithmetic()<br>
+
+if solution:<br>
+    SEND, MORE, MONEY = solution<br>
+    print(f'SEND = {SEND}')<br>
+    print(f'MORE = {MORE}')<br>
+    print(f'MONEY = {MONEY}')<br>
+else:<br>
+    print("No solution found.")<br>
+
+    
 <h2>Sample Input and Output:</h2>
 SEND = 9567<br>
 MORE = 1085<br>
