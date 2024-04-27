@@ -90,8 +90,6 @@ def solve_cryptarithmetic():
 
         if SEND + MORE == MONEY:
             return SEND, MORE, MONEY
-```
-
     return None
 
 solution = solve_cryptarithmetic()
@@ -103,7 +101,8 @@ if solution:
     print(f'MONEY = {MONEY}')
 else:
     print("No solution found.")
-```
+
+<br>
 <h2>Sample Input and Output:</h2>
 SEND = 9567<br>
 MORE = 1085<br>
